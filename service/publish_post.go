@@ -1,8 +1,8 @@
 package service
 
 import (
+	"backend_go/repository"
 	"errors"
-	"github.com/Moonlight-Zhao/go-project-example/repository"
 	"time"
 	"unicode/utf8"
 )
@@ -29,7 +29,7 @@ type PublishPostFlow struct {
 
 func (f *PublishPostFlow) Do() (int64, error) {
 	if err := f.checkParam(); err != nil {
-		return 0, err
+		return -1, err
 	}
 	if err := f.publish(); err != nil {
 		return 0, err

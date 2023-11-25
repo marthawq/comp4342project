@@ -1,19 +1,18 @@
 package repository
 
 import (
-	"github.com/Moonlight-Zhao/go-project-example/util"
+	"backend_go/util"
 	"gorm.io/gorm"
 	"sync"
 	"time"
 )
 
 type Post struct {
-	Id         int64     `gorm:"column:id"`
-	ParentId   int64     `gorm:"parent_id"`
-	UserId     int64     `gorm:"column:user_id"`
-	Content    string    `gorm:"column:content"`
-	DiggCount  int32     `gorm:"column:digg_count"`
-	CreateTime time.Time `gorm:"column:create_time"`
+	Id         int64     `gorm:"column:postId" json:"id"`
+	ParentId   int64     `gorm:"column:topicId" json:"topicId"`
+	UserId     int64     `gorm:"column:userId" json:"userId"`
+	Content    string    `gorm:"column:content" json:"content"`
+	CreateTime time.Time `gorm:"column:create_time" json:"create_time"`
 }
 
 func (Post) TableName() string {
@@ -36,7 +35,7 @@ func NewPostDaoInstance() *PostDao {
 
 func (*PostDao) QueryPostById(id int64) (*Post, error) {
 	var post Post
-	err := db.Where("id = ?", id).Find(&post).Error
+	err := db.Where("postId = ?", id).Find(&post).Error
 	if err == gorm.ErrRecordNotFound {
 		return nil, nil
 	}
@@ -49,9 +48,9 @@ func (*PostDao) QueryPostById(id int64) (*Post, error) {
 
 func (*PostDao) QueryPostByParentId(parentId int64) ([]*Post, error) {
 	var posts []*Post
-	err := db.Where("parent_id = ?", parentId).Find(&posts).Error
+	err := db.Where("topicId = ?", parentId).Find(&posts).Error
 	if err != nil {
-		util.Logger.Error("find posts by parent_id err:" + err.Error())
+		util.Logger.Error("find posts by topic id err:" + err.Error())
 		return nil, err
 	}
 	return posts, nil

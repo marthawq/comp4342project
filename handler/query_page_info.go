@@ -1,16 +1,26 @@
 package handler
 
 import (
-	"github.com/Moonlight-Zhao/go-project-example/service"
-	"strconv"
+	"backend_go/service"
 )
 
-func PublishPost(uidStr, topicIdStr, content string) *PageData {
+type PageData struct {
+	Code int64       `json:"code"`
+	Msg  string      `json:"msg"`
+	Data interface{} `json:"data"`
+}
+
+func QueryPageInfo() *PageData {
 	//参数转换
-	uid, _ := strconv.ParseInt(uidStr, 10, 64)
-	topic, _ := strconv.ParseInt(topicIdStr, 10, 64)
+	//topicId, err := strconv.ParseInt(topicIdStr, 10, 64)
+	//if err != nil {
+	//	return &PageData{
+	//		Code: -1,
+	//		Msg:  err.Error(),
+	//	}
+	//}
 	//获取service层结果
-	postId, err := service.PublishPost(topic, uid, content)
+	pageInfo, err := service.QueryPageInfo()
 	if err != nil {
 		return &PageData{
 			Code: -1,
@@ -20,9 +30,7 @@ func PublishPost(uidStr, topicIdStr, content string) *PageData {
 	return &PageData{
 		Code: 0,
 		Msg:  "success",
-		Data: map[string]int64{
-			"post_id": postId,
-		},
+		Data: pageInfo,
 	}
 
 }

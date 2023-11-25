@@ -1,8 +1,9 @@
 package service
 
 import (
+	"backend_go/repository"
 	"errors"
-	"github.com/Moonlight-Zhao/go-project-example/repository"
+	"fmt"
 	"time"
 	"unicode/utf8"
 )
@@ -38,6 +39,7 @@ func (f *PublishTopicFlow) Do() (int64, error) {
 }
 
 func (f *PublishTopicFlow) checkParam() error {
+	//fmt.Println(f.UserId)
 	if f.UserId <= 0 {
 		return errors.New("userId id must be larger than 0")
 	}
@@ -59,6 +61,7 @@ func (f *PublishTopicFlow) publish() error {
 	if err := repository.NewTopicDaoInstance().CreateTopic(topic); err != nil {
 		return err
 	}
-	f.TopicId = topic.Id
+	f.TopicId = topic.TopicId
+	fmt.Println(topic.TopicId)
 	return nil
 }

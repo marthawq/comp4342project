@@ -1,8 +1,8 @@
 package handler
 
 import (
+	"backend_go/service"
 	"fmt"
-	"github.com/Moonlight-Zhao/go-project-example/service"
 	"strconv"
 )
 

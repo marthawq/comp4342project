@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c1461f98-708b-4ae0-8656-6ca27cbc44e7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handler/query_all_user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handler/update_score.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handler/user_login.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/query_all_user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/update_score.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/user_login.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/user_register.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sever.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.sql" beforeDir="false" afterPath="$PROJECT_DIR$/example.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handler/publish_post.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/publish_post.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handler/publish_topic.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/publish_topic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handler/query_page_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/query_page_info.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handler/user_register.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/user_register.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/db_init.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/db_init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/post.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/post.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/topic.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/topic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/publish_post.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/publish_post.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/publish_topic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/publish_topic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/query_page_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/query_page_info.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/query_page_info_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/query_page_info_test.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2YTVgoSB5AnqgKYl0V5lkqh2SmN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/Users/huwenqing/PolyU/COMP/Year3/COMP4342/Project/backend_go",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.go test backend_go/service">
+    <configuration name="go build backend_go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="backend_go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="backend_go" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/sever.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test backend_go/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="backend_go" />
+      <working_directory value="$PROJECT_DIR$/service" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="backend_go/service" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.go test backend_go/service" />
+        <item itemvalue="Go Build.go build backend_go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/service/query_page_info.go</url>
+          <line>56</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/service/query_post_info.go</url>
+          <line>30</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
