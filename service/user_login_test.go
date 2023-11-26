@@ -4,9 +4,10 @@ import (
 	"testing"
 )
 
-func TestQueryPageInfo(t *testing.T) {
+func TestQueryUserByEmail(t *testing.T) {
 	type args struct {
-		topicId int64
+		email string
+		pwd   string
 	}
 	tests := []struct {
 		name    string
@@ -14,18 +15,19 @@ func TestQueryPageInfo(t *testing.T) {
 		wantErr bool
 	}{
 		{
-			name: "query page info",
+			name: "login testing",
 			args: args{
-				topicId: 1,
+				email: "abcd@gmail.com",
+				pwd:   "1234",
 			},
 			wantErr: false,
 		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			_, err := QueryPageInfo()
+			_, err := QueryUserByEmail(tt.args.email, tt.args.pwd)
 			if (err != nil) != tt.wantErr {
-				t.Errorf("QueryPageInfo() error = %v, wantErr %v", err, tt.wantErr)
+				t.Errorf("QueryUserByEmail() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
 		})

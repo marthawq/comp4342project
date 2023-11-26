@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/Moonlight-Zhao/go-project-example/repository"
-	"github.com/Moonlight-Zhao/go-project-example/util"
+	"backend_go/repository"
+	"backend_go/util"
 	"os"
 	"testing"
 )
@@ -30,11 +30,11 @@ func TestPublishPost(t *testing.T) {
 		wantErr bool
 	}{
 		{
-			name: "测试发布回帖",
+			name: "Test posting",
 			args: args{
 				topicId: 1,
 				userId:  2,
-				content: "再次回帖",
+				content: "posting again",
 			},
 			wantErr: false,
 		},

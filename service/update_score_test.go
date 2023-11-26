@@ -1,12 +1,11 @@
 package service
 
-import (
-	"testing"
-)
+import "testing"
 
-func TestQueryPageInfo(t *testing.T) {
+func TestUpdateScore(t *testing.T) {
 	type args struct {
-		topicId int64
+		userId   int64
+		newScore int64
 	}
 	tests := []struct {
 		name    string
@@ -14,18 +13,19 @@ func TestQueryPageInfo(t *testing.T) {
 		wantErr bool
 	}{
 		{
-			name: "query page info",
+			name: "testing update score",
 			args: args{
-				topicId: 1,
+				userId:   1,
+				newScore: 10,
 			},
 			wantErr: false,
 		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			_, err := QueryPageInfo()
+			_, err := UpdateScore(tt.args.userId, tt.args.newScore)
 			if (err != nil) != tt.wantErr {
-				t.Errorf("QueryPageInfo() error = %v, wantErr %v", err, tt.wantErr)
+				t.Errorf("UpdateScore() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
 		})

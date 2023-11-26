@@ -11,7 +11,7 @@ type User struct {
 	Username string `gorm:"column:username" json:"username,omitempty"`
 	Email    string `gorm:"column:email" json:"email,omitempty"`
 	Password string `gorm:"column:password" json:"password,omitempty"`
-	Score    int64  `gorm:"column:score" json:"score,omitempty"`
+	Score    int64  `gorm:"column:score" json:"score"`
 }
 
 func (User) TableName() string {
