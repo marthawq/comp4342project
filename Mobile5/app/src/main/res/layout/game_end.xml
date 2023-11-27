@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCongrats"
+    tools:ignore="HardcodedText">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgwithcir">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title_quiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="center_horizontal"
+                android:text="Game"
+                android:textColor="#1633D6"
+                android:textSize="60sp"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_congrats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:fontFamily="monospace"
+                    android:text="\nCongratulations!\n"
+                    android:textColor="#FFFFFF"
+                    android:textSize="38sp"
+                    android:gravity="center_horizontal"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/tv_words"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:fontFamily="monospace"
+                    android:text="\nYou have completed the games!\n\n"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:gravity="center_horizontal"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/btn_learning_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:fontFamily="monospace"
+                    android:background="#6E6ADD"
+                    android:text="Learning menu"
+                    android:textSize="24sp"
+                    android:textColor="#FFFFFF"/>
+
+                <Button
+                    android:id="@+id/btn_go_to_homepage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="10"
+                    android:padding="10dp"
+                    android:background="#6E6ADD"
+                    android:fontFamily="monospace"
+                    android:text="Home page"
+                    android:textSize="24sp"
+                    android:textColor="#FFFFFF"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubtractionLearn"
+    tools:ignore="HardcodedText">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgwithcir">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title_minus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="center_horizontal"
+                android:text="Subtraction"
+                android:textColor="#1633D6"
+                android:textSize="60sp"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_learn_minus"
+                    android:layout_width="match_parent"
+                    android:layout_height="570dp"
+                    app:srcCompat="@drawable/minus_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/spaceee_minus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textSize="300sp" />
+
+                    <TextView
+                        android:id="@+id/tv_number_minus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:gravity="center_horizontal"
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textColor="#FFEB3B"
+                        android:textSize="96sp" />
+
+                    <Button
+                        android:id="@+id/btn_taptonext_minus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:fontFamily="casual"
+                        android:text="tap to continue"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_0_minus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="casual"
+                            android:gravity="center_horizontal"
+                            android:text="0%"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/tv_20_minus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="casual"
+                            android:gravity="center_horizontal"
+                            android:text="20%"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/tv_40_minus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="casual"
+                            android:gravity="center_horizontal"
+                            android:text="40%"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/tv_60_minus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="casual"
+                            android:gravity="center_horizontal"
+                            android:text="60%"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/tv_80_minus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="casual"
+                            android:gravity="center_horizontal"
+                            android:text="80%"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+
+                        <TextView
+                            android:id="@+id/tv_100_minus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="casual"
+                            android:gravity="center_horizontal"
+                            android:text="100%"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/progressBar_minus"
+                        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:progress="20"
+                        android:progressDrawable="@drawable/progress_bar" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="10dp"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="sans-serif"
+        android:text="author"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="some testing xt"
+        android:layout_below="@+id/author"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/title"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="some content"
+        android:layout_below="@+id/title"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:id="@+id/content"
+        android:layout_marginLeft="30dp"/>
+    <!--    <Button-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="sans-serif"-->
+    <!--        android:text="Reply"-->
+    <!--        android:layout_below="@+id/content"-->
+    <!--        android:layout_marginLeft="30dp"-->
+    <!--        android:background="@drawable/rounded_ui"-->
+    <!--        android:backgroundTint="@color/blue"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:id="@+id/postButton"-->
+    <!--        android:layout_marginBottom="30dp" />-->
+
+
+
+
+</LinearLayout>

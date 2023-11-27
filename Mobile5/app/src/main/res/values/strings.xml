@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Mathriends</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+
+    <string name="about_us">We are Mathriends Company Limited. "Mathriends" is released since 2023. Our app name \"Mathriends\" is a combination of \"Math\" and \"Friends\". We hope children can learn maths in a more relaxing way like meeting friends. </string>
+    <string name="faq">\n\n1. \nQ. What ages of children can use this app? \n\nA. All ages of children are welcomed! It is suitable for all people who learn maths or want to enhance their math skills. \n\n\n2. \nQ. I am not good at maths, can I change the study level? \n\nA. Yes! You can change the difficulties in setting. </string>
+
+    <string name="privacy">  If you choose to use our Service, then you agree to the collection and use of information in relation with this policy.\n\nThe Personal Information that we collect are used for providing and improving the Service. \n\nWe will not use or share your information with anyone except as described in this Privacy Policy.
+        \n\nIf you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us</string>
+
+    <string name="buttonText">View Reply</string>
+
+
+</resources>

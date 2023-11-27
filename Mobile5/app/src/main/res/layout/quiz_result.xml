@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizResult"
+    tools:ignore="HardcodedText">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgwithcir">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title_quiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="center_horizontal"
+                android:text="Quiz"
+                android:textColor="#1633D6"
+                android:textSize="60sp"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_quizend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:fontFamily="monospace"
+                    android:text="\nThe quiz is finished!\n"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40sp"
+                    android:gravity="center_horizontal"
+                    tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/tv_yourscoreis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:fontFamily="monospace"
+                        android:text="Your score is: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        android:gravity="center_horizontal"
+                        tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/tv_yourscore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="10"
+                    android:fontFamily="monospace"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="50sp"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/tv_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="10"
+                    android:fontFamily="monospace"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/btn_go_home_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="monospace"
+                    android:background="#6E6ADD"
+                    android:text="Go back to home page"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"/>
+
+                <Button
+                    android:id="@+id/btn_play_again"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="10"
+                    android:background="#6E6ADD"
+                    android:fontFamily="monospace"
+                    android:text="Play again"
+                    android:textSize="24sp"
+                    android:textColor="#FFFFFF"
+                />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

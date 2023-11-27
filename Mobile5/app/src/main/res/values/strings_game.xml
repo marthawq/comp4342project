@@ -1,0 +1,86 @@
+<resources>
+
+    <string-array name="questions_game_add">
+        <item>12 + 3 = ?</item>
+        <item>5 + 2 = ?</item>
+        <item>1 + 3 = ?</item>
+        <item>7 + 2 = ?</item>
+        <item>3 + 7 = ?</item>
+    </string-array>
+
+    <string-array name="answers_game_add">
+        <item>15</item>
+        <item>7</item>
+        <item>4</item>
+        <item>9</item>
+        <item>10</item>
+        <item>5</item>
+        <item>3</item>>
+        <item>6</item>
+        <item>2</item>
+        <item>18</item>
+    </string-array>
+
+    <string-array name="questions_game_minus">
+        <item>18 - 3 = ?</item>
+        <item>12 - 2 = ?</item>
+        <item>10 - 4 = ?</item>
+        <item>3 - 2 = ?</item>
+        <item>7 - 3 = ?</item>
+    </string-array>
+
+    <string-array name="answers_game_minus">
+        <item>15</item>
+        <item>10</item>
+        <item>6</item>
+        <item>1</item>
+        <item>4</item>
+        <item>16</item>
+        <item>5</item>
+        <item>13</item>
+        <item>17</item>
+        <item>9</item>
+    </string-array>
+
+    <string-array name="questions_game_multiply">
+        <item>9 x 3 = ?</item>
+        <item>6 x 2 = ?</item>
+        <item>6 x 4 = ?</item>
+        <item>3 x 2 = ?</item>
+        <item>7 x 3 = ?</item>
+    </string-array>
+
+    <string-array name="answers_game_multiply">
+        <item>27</item>
+        <item>12</item>
+        <item>24</item>
+        <item>6</item>
+        <item>21</item>
+        <item>17</item>
+        <item>15</item>
+        <item>30</item>
+        <item>11</item>
+        <item>16</item>
+    </string-array>
+
+    <string-array name="questions_game_divide">
+        <item>18 ÷ 3 = ?</item>
+        <item>16 ÷ 2 = ?</item>
+        <item>15 ÷ 5 = ?</item>
+        <item>14 ÷ 2 = ?</item>
+        <item>10 ÷ 2 = ?</item>
+    </string-array>
+
+    <string-array name="answers_game_divide">
+        <item>6</item>
+        <item>8</item>
+        <item>3</item>
+        <item>7</item>
+        <item>5</item>
+        <item>18</item>
+        <item>16</item>
+        <item>13</item>
+        <item>4</item>
+        <item>2</item>
+    </string-array>
+</resources>
